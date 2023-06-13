@@ -17,10 +17,10 @@ size (Node x y z t) = 1 + size (x) + size (y) + size (t)
 
 -- Allons maintenant nous attacquer a la fonctions height si vous voyez ce que je veux dire
 
-{-height :: (QuadTree a) -> Int
+height :: (QuadTree a) -> Int
 height (Leaf x) = 0
 height (Node x y z t) = 1 + max (max (height x) (height y) max (height z) (height t))
--}
+
 
 -- ssyons d'ecrire la fonction map associer a ce QuadTree
 
